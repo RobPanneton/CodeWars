@@ -12,6 +12,6 @@ function solution(string) {
   return newString.join("");
 }
 
-// console.log(solution("camelCasing"));
-// console.log(solution("camelCasingTest"));
+console.log(solution("camelCasing"));
+console.log(solution("camelCasingTest"));
 console.log(solution("camelCasingTestAgain"));
