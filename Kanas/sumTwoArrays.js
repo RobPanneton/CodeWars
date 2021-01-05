@@ -13,6 +13,9 @@ function addArrays(array1, array2) {
         .splice((0, 1));
 }
 
+//////////////////////////
+//The less cheesy version
+
 //   if (!array1.length && !array2.length) return [];
 
 //   console.log({ array1: array1, array2: array2 });
