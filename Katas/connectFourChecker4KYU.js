@@ -32,7 +32,6 @@ function whoIsWinner(piecesPositionList) {
             return true;
           }
         }
-
         if (i > 2 && j > 2) {
           if (
             grid[i][j] === grid[i - 1][j - 1] &&
@@ -42,7 +41,6 @@ function whoIsWinner(piecesPositionList) {
             return true;
           }
         }
-
         if (i < 4) {
           if (
             grid[i][j] === grid[i + 1][j] &&
