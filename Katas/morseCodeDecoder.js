@@ -50,8 +50,6 @@ decodeMorse = function (morseCode) {
     fixedMorseCode = fixedMorseCode.substring(1);
   }
 
-  console.log(fixedMorseCode);
-
   fixedMorseCode.split("   ").forEach((word, index) => {
     word.split(" ").forEach((char) => {
       deCoded.push(chars[char]);
@@ -65,12 +63,14 @@ decodeMorse = function (morseCode) {
 };
 
 // console.log(decodeMorse(".... . -.--   .--- ..- -.. ."));
-console.log(decodeMorse("   .   ."));
-console.log(
-  decodeMorse(
-    "      ...---... -.-.--   - .... .   --.- ..- .. -.-. -.-   -... .-. --- .-- -.   ..-. --- -..-   .--- ..- -- .--. ...   --- ...- . .-.   - .... .   .-.. .- --.. -.--   -.. --- --. .-.-.-  "
-  )
-);
+// console.log(decodeMorse("   .   ."));
+// console.log(
+//   decodeMorse(
+//     "      ...---... -.-.--   - .... .   --.- ..- .. -.-. -.-   -... .-. --- .-- -.   ..-. --- -..-   .--- ..- -- .--. ...   --- ...- . .-.   - .... .   .-.. .- --.. -.--   -.. --- --. .-.-.-  "
+//   )
+// );
+
+console.log(MORSE_CODE["."]);
 
 ////////////////////////////NOTE////////////////////////////
 // for characters, utf - 64 -- A is at 65
