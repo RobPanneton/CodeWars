@@ -122,16 +122,18 @@ function whoIsWinner(piecesPositionList) {
         break;
     }
 
-    for (let i = 0; i < 6; i++) {
-      if (gameGrid[column][i] === "empty") {
-        gameGrid[column][i] = positionInfo[1];
-        if (winChecker(gameGrid)) {
-          hasWinner = true;
-          winner = positionInfo[1];
+    if (!hasWinner) {
+      for (let i = 0; i < 6; i++) {
+        if (gameGrid[column][i] === "empty") {
+          gameGrid[column][i] = positionInfo[1];
+          if (winChecker(gameGrid)) {
+            hasWinner = true;
+            winner = positionInfo[1];
+          }
+          break;
         }
-        break;
+        if (hasWinner === true) break;
       }
-      if (hasWinner === true) break;
     }
   });
 
