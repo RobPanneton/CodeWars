@@ -21,7 +21,6 @@ function validSolution(board) {
   }
 
   // check the "boxes"
-
   const winChecker = (initialI, initialJ) => {
     let checkArr1 = [];
     for (let i = initialI; i < initialI + 3; i++) {
@@ -33,15 +32,11 @@ function validSolution(board) {
     return true;
   };
 
-  if (!winChecker(0, 0)) return false;
-  if (!winChecker(0, 3)) return false;
-  if (!winChecker(0, 6)) return false;
-  if (!winChecker(3, 0)) return false;
-  if (!winChecker(3, 3)) return false;
-  if (!winChecker(3, 6)) return false;
-  if (!winChecker(6, 0)) return false;
-  if (!winChecker(6, 3)) return false;
-  if (!winChecker(6, 6)) return false;
+  for (let i = 0; i < 7; i += 3) {
+    for (let j = 0; j < 7; j += 3) {
+      if (!winChecker(i, j)) return false;
+    }
+  }
 
   return true;
 }
