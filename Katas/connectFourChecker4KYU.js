@@ -1,5 +1,4 @@
 function whoIsWinner(piecesPositionList) {
-  console.log(piecesPositionList);
   let gameGrid = [
     ["empty", "empty", "empty", "empty", "empty", "empty"],
     ["empty", "empty", "empty", "empty", "empty", "empty"],

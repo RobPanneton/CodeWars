@@ -62,13 +62,13 @@ decodeMorse = function (morseCode) {
   return deCoded.join("").toUpperCase();
 };
 
-// console.log(decodeMorse(".... . -.--   .--- ..- -.. ."));
-// console.log(decodeMorse("   .   ."));
-// console.log(
-//   decodeMorse(
-//     "      ...---... -.-.--   - .... .   --.- ..- .. -.-. -.-   -... .-. --- .-- -.   ..-. --- -..-   .--- ..- -- .--. ...   --- ...- . .-.   - .... .   .-.. .- --.. -.--   -.. --- --. .-.-.-  "
-//   )
-// );
+console.log(decodeMorse(".... . -.--   .--- ..- -.. ."));
+console.log(decodeMorse("   .   ."));
+console.log(
+  decodeMorse(
+    "      ...---... -.-.--   - .... .   --.- ..- .. -.-. -.-   -... .-. --- .-- -.   ..-. --- -..-   .--- ..- -- .--. ...   --- ...- . .-.   - .... .   .-.. .- --.. -.--   -.. --- --. .-.-.-  "
+  )
+);
 
 console.log(MORSE_CODE["."]);
 
